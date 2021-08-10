@@ -35,15 +35,47 @@ The task is episodic, and in order to consider the environment solved, the agent
 	
 2. Place the file in the repository folder, and unzip (or decompress) the file.
 
-### Instructions
+### Dependencies
 
-Follow the instructions in `Navigation.ipynb` to get started evaluating the agent, or train one from scratch! 
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name dqn python=3.6
+	source activate dqn
+	```
+	- __Windows__: 
+	```bash
+	conda create --name dqn python=3.6 
+	activate dqn
+	```
+
+3. Clone the repository, and then, install the required packages (see requirements).
+```bash
+git clone https://github.com/ciamic/DQN.git
+```
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dqn` environment.  
+```bash
+python -m ipykernel install --user --name dqn --display-name "dqn"
+```
+
+5. Before running code in a notebook, change the kernel to match the `dqn` environment by using the drop-down contextual `Kernel` menu. 
 
 ### Requirements
 
 - `Python 3`
 - `Torch (v0.4)`
 - `unityagents`
+- `numpy`
+- `matplotlib`
+
+### Instructions
+
+Follow the instructions in `Navigation.ipynb` to get started evaluating the agent, or train one from scratch!
+
 
 ### Ideas for Future Work
 
